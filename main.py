@@ -95,4 +95,9 @@ def procesar_inventario(carpeta_nombre):
 
 # --- Ejecución del ejemplo ---
 if __name__ == "__main__":
-    main()
+    # Creamos un archivo de prueba rápido
+    with open("datos_prueba.json", "w") as f:
+        json.dump({"id": 1, "producto": "Laptop", "precio": 1200}, f)
+
+    # Ejecutamos la lógica
+    procesar_inventario(".")
