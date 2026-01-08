@@ -33,7 +33,7 @@ def main():
     parser = argparse.ArgumentParser(description="Script genérico para automatizaciones.")
     
     parser.add_argument(
-        "--name", 
+        "--task-namename", 
         type=str, 
         default="Tarea-Default", 
         help="Nombre de la operación a realizar"
