@@ -28,7 +28,7 @@ def procesar_tarea(nombre_tarea, dry_run=False):
     # Aquí podrías llamar a tus funciones de validación JSON o peticiones API
     return True
 
-def main_2():
+def main_new():
     # 2. Configuración de Argumentos (Argparse)
     parser = argparse.ArgumentParser(description="Script genérico para automatizaciones.")
     
@@ -95,9 +95,4 @@ def procesar_inventario(carpeta_nombre):
 
 # --- Ejecución del ejemplo ---
 if __name__ == "__main__":
-    # Creamos un archivo de prueba rápido
-    with open("datos_prueba.json", "w") as f:
-        json.dump({"id": 1, "producto": "Laptop", "precio": 1200}, f)
-
-    # Ejecutamos la lógica
-    procesar_inventario(".")
+    main_new()
